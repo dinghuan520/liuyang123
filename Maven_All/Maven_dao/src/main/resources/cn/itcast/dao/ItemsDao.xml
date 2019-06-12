@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--实现接口的全限定名称-->
+<mapper namespace="cn.itcast.dao.ItemsDao">
+    <!--resultType 返回值的类型-->
+    <select id="findAll" resultType="items" parameterType="int">
+
+        SELECT * FROM items WHERE id=#{id};
+
+
+    </select>
+</mapper>
